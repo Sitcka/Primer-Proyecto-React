@@ -1,38 +1,38 @@
-.App {
+/* Normalmente añadimos estilos generales de la aplicacion */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 18px;
+  background-color: #1b1b32;
+}
+
+h1{
+  color: #f5f6f7;
+  max-width: 940px;
+  font-size: 2.5em;/*Factor relativo al tamaño de la letra de su contenedor */
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  line-height: 1.1;/*Altura de la linea*/
+  margin: 40px 0;
+}
+
+.App{
+  min-height: 100vh;/*Esto permite que se adapte a la altura del navegador viewportheight, altura minima de la aplicacion*/
+  display: flex;
+  flex-wrap: wrap;/*Si un elemento toma todo el ancho del contenedor, los otros elementos van ubicarse en la siguiente linea/debaje del otro*/
+  align-items: center;
+  justify-content: center; /*Centrar los elementos horizontal y verticalmente*/
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contenedor-principal{
+  min-height: 600px;/*Altura minima de 600px, asi el contenedor dependiendo la cantidad de testimonios se va adaptar a la cantidad que halla*/
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
